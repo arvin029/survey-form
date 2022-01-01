@@ -1,0 +1,121 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body, html {
+	font-family: 'Pangolin', cursive;
+	
+}
+body {
+	background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+	background-size: cover;
+}
+#title {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#description {
+	padding-bottom: 20px;
+	font-size: 18px;
+}
+#title, #description {
+	text-align: center;
+	color: white;
+}
+
+#survey-form {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 40px;
+	margin-left: 50%;
+	border-radius: 5px;
+	transform: translate(-50%);
+	background: linear-gradient(to right, rgba(128, 189, 255, .7), rgba(40, 40, 251, .7));
+	width: 50%;
+	font-size: 20px;
+	font-family: 'PT Sans', sans-serif;
+}
+/* Media Queries ----Start------ */
+@media screen and (max-width: 768px) {
+  #title {
+	font-size: 30px
+ }
+ #description {
+ 	font-size: 16px;
+ }
+
+  #survey-form {
+  	padding: 15px 30px;
+   	width: 95%;
+   	font-size: 18px;
+  }
+  .form-control {
+  	font-size: 12px;
+	margin: 2px;
+  }
+  #dropdown, #dropdown2 {
+	font-size: 12px;
+	margin: 2px;
+	}
+}
+/* -----------End------------ */
+#radios {
+	display: inline-block;
+}
+#checkboxes {
+	display: inline-block;
+}
+.form-control {
+	font-size: 15px;
+	padding: 8px;
+	margin: 5px;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+#dropdown, #dropdown2 {
+	font-size: 15px;
+	padding: 8px;
+	margin: 5px;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+.radio-input {
+	min-height: 20px;
+	min-width: 20px;
+	margin-right: 5px;
+}
+.input-checkbox {
+	min-height: 18px;
+	min-width: 18px;
+	margin-right: 5px;
+}
+#comment {
+	font-size: 15px;
+	padding: 8px;
+	margin: 5px; 
+	border-radius: 5px;
+	min-height: 120px;
+}
+#submit {
+	font-size: 15px;
+	padding: 8px;
+	margin: 5px;
+	background-color: rgb(27, 73, 223);
+	color: #fff;
+	border: none;
+	font-size: 20px;
+	border-radius: 10px;
+}
+#submit:hover {
+	background-color:  rgb(25, 25, 255);
+	color: #fff;
+	transition: .5s;
+}
+#footer {
+	background-color: #333333;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	font-family: arial;
+}
